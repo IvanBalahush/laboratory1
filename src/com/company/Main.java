@@ -11,7 +11,6 @@ public class Main {
         int max = shortLongNumber.findTheMaxNumber();
         int min = shortLongNumber.findTheMinNumber();
         System.out.println("\nMax: "+max);
-        System.out.println("Hi!");
         System.out.println("Min: "+min);
     }
 }
