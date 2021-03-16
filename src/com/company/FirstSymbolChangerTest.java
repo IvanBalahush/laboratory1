@@ -28,5 +28,6 @@ public class FirstSymbolChangerTest {
     @Test
     public void ignoreDotAndComma(){
         String a = firstSymbolChanger.changeFirstSymbol("word. word, word", "word", "word");
+        assertTrue(a.equals("Word. word, word"));
     }
 }
