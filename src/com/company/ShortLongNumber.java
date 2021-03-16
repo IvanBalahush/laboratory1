@@ -1,11 +1,12 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ShortLongNumber {
     Scanner scanner = new Scanner(System.in);
 
-    private int[] arr;
+    public int[] arr;
 
 
     public ShortLongNumber(int size){
@@ -15,6 +16,10 @@ public class ShortLongNumber {
     public ShortLongNumber(){
         System.out.print("Enter the size of array: ");
         this.arr = new int[scanner.nextInt()];
+    }
+
+    public ShortLongNumber(int[] arr){
+        this.arr = arr;
     }
 
     public void fillArray(){
@@ -41,6 +46,7 @@ public class ShortLongNumber {
         }
         return maxNumber;
     }
+
     public int findTheMinNumber(){
         int minNumber = arr[0];
         for (int i = 0; i < arr.length; i++){
